@@ -1,0 +1,5 @@
+data/pd.csv
+**/__pycache__/
+*.egg-info/
+build/
+dist/

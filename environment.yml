@@ -1,0 +1,16 @@
+# Conda / mamba environment for mevpy (package, rainfall tools, example and tests).
+#   mamba env create -f environment.yml      (or: conda env create -f environment.yml)
+#   mamba activate mevpy
+# mevpy itself is installed from this directory in editable mode.
+name: mevpy
+channels:
+  - conda-forge
+dependencies:
+  - python>=3.9
+  - numpy>=1.22
+  - scipy>=1.9
+  - pandas>=1.4
+  - matplotlib>=3.5
+  - pip
+  - pip:
+      - -e .

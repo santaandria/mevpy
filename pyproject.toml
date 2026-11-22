@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mevpy"
+version = "2.0.0"
+description = "Empirical Metastatistical Extreme Value Distribution (MEVD) with block bootstrap"
+readme = "README.md"
+license = "MIT"
+license-files = ["LICENSE"]
+authors = [
+    { name = "Enrico Zorzetto" },   # mevpy v1
+    { name = "Santa Andria" },      # object-oriented refactoring, generalisation, quantile inversion
+]
+requires-python = ">=3.9"
+dependencies = ["numpy>=1.22", "scipy>=1.9"]
+
+[project.optional-dependencies]
+rainfall = ["pandas>=1.4", "matplotlib>=3.5"]
+
+[tool.setuptools]
+packages = ["mevpy"]
